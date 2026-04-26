@@ -1,0 +1,45 @@
+
+        :root {
+            --primary-color: #16a34a; /* A vibrant, friendly green */
+            --dark-color: #153e2a;    /* A deep, professional forest green */
+            --gray-light: #f0fdf4;   /* A light, soft green for the background */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--gray-light);
+        }
+
+        .bg-dark-pet { background-color: var(--dark-color); }
+        .text-dark-pet { color: var(--dark-color); }
+        .bg-primary-pet { background-color: var(--primary-color); }
+        .text-primary-pet { color: var(--primary-color); }
+
+        /* The sidebar is now a fixed-position element on mobile */
+        .sidebar {
+            width: 250px;
+            min-height: 100vh;
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(0);
+        }
+
+        /* This class hides the sidebar on mobile by default */
+        .sidebar.hidden-mobile {
+            transform: translateX(-100%);
+        }
+
+        /* On larger screens, the sidebar is visible and part of the flow */
+        @media (min-width: 768px) {
+            .sidebar.hidden-mobile {
+                transform: translateX(0);
+            }
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+
+        .navbar-nav .nav-item {
+            position: relative;
+        }
+    
