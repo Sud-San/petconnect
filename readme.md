@@ -1,3 +1,3 @@
 Pet Adoption Website
 
-Live Project: petconnect.gt.tc/
+Live Project:  https://petconnect.gt.tc/
